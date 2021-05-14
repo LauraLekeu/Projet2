@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request; 
-use App\Models\Course;
+use App\Models\User;
 
-class Courses extends Controller
+class Users extends Controller
 {
     /** 
      *   Return tous les cours au format json
      */
     public function index() {
-        return response()->json(Course::all());
+        return response()->json(User::all());
     }
 }
