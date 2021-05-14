@@ -1,0 +1,359 @@
+/* -----------------------------------------------------------------
+                PAGE SITE 
+ ----------------------------------------------------------------- */
+header {
+    position: fixed;
+    z-index: 100;
+    top:0;
+    height: auto;
+    width: 100%;
+    background: $color-contrast;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2em 0;
+
+
+    #logo {
+      
+        padding-top: 0em;
+        margin-left: 2em;
+    }
+}
+
+.menu-open {
+    display: none;
+}
+
+
+footer {
+  position: fixed;
+   //position: initial;
+    background: $color-contrast;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    div {
+        text-align: center;
+        padding: 1.5em;
+        color: $color-white;
+    }
+}
+
+#logo-site {
+    font-family: $font-secondaire;
+    font-size: 1.8em;
+    color: $color-white;
+    margin-left: 2em;
+    width: 20%;
+}
+
+.label-form {
+    margin: 3.5em 0 .6em 0;
+    font-weight: 500;
+    color:tomato;  
+    font-size: 1.2em;
+}
+
+.icon-infos {
+    color:$color-medium;
+    margin: 2em 0 .5em 0;
+}
+
+.sous-titre-site {
+    width: 100%;
+    font-weight: 400;
+    color:$color-dark;    
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 1em;
+}
+
+
+@media screen and (max-width:1024px){
+    .form-connexion {
+       flex-wrap: nowrap;
+       width: 90%;
+
+       #formulaire-connexion {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+       .input-form {
+           width: 29%;
+       }
+       .btn-form {
+            margin: 0.8em 1em 0.8em 0;
+
+       }
+    }
+}
+
+.form-connexion {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 80%;
+ 
+}
+
+#formulaire-inscription {
+    margin-bottom:3em;
+}
+
+
+
+.input-form {
+    background: $color-white;
+    border: 1px solid $color-white;
+   // box-shadow: 1px 1px 20px $color-medium;
+    border-radius: 10px;
+    padding: .8em 2em;
+    margin: .8em 1em .8em 0;
+    
+   font-size: 1em;
+
+    &.inscription {
+        width: 70%;
+        padding: .8em 2em;
+        
+        
+    }
+
+    &::placeholder {
+        font-size: 1em;
+    }
+}
+
+.btn-form {
+    background: $color-contrast;
+    border: 1px solid $color-contrast;
+    box-shadow: 1px 1px 20px #0f1013;
+    color:$color-white;
+    border-radius: 10px;
+    margin: .8em 3em .8em 0;
+    padding: .8em 2em;
+    font-size: 1em;
+    // font-size: 16px;
+    &.inscription {
+        margin-top: 1.5em;
+        box-shadow: none;
+    }
+    
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  box-shadow: 1px 1px 20px $color-medium;
+}
+
+.swiper-pagination-bullet {
+	//  padding: 0 15px !important;
+	border-radius: 1;
+    margin: .2em !important;
+	// width: auto;
+	height: 2px;
+	// text-align: center;
+	// font-size: 12px;
+	// opacity: 1;
+	background: $color-dark !important;
+
+  &-active {
+  	background: tomato!important;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px ){
+
+    #logo {
+            width: 20%;
+            font-size: 1.5em;
+            margin-left: 1em;
+    }
+
+
+    .sections {
+        &.large-section, &.small-section  {
+            &.site {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1em;
+
+
+                .section-add {
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    .label-form {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                    .input-form {
+                        width: 50%;
+                        margin: .7em 0;
+                    }
+                    .btn-form {
+                        width: 50%;
+                        margin: .7em 0;
+                    }
+                    
+                    
+                }
+
+            }  
+        }
+    }
+    .input-form {
+        &.inscription {
+            width: 40%;
+        }
+    }
+    .swiper-slide img {
+     
+        width: 90%;
+      
+      }
+}
+
+
+@media screen and (max-width: 780px ){
+
+  
+    .sections {
+        &.large-section, &.small-section  {
+            &.site {   
+                margin-bottom: 0;
+            }  
+        }
+    }
+    .input-form {
+        &.inscription {
+            width: 40%;
+        }
+    }
+    .swiper-slide img {
+        width: 80%;
+      }
+}
+
+@media screen and (max-width: 760px ){
+
+    .main {
+        &.site {
+            margin-top: 2em;
+        }
+    }
+
+    header {
+        display: block;
+        text-align: center;
+
+        #logo {
+            margin: 1em 0 1em 0;
+            padding-top: 0em;
+        }
+
+        
+
+        .form-connexion {
+            display: none;
+        }
+
+        
+        
+    }
+
+    .menu-open {
+       // display: flex;
+        background: $color-contrast;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        top: 10vh;
+        text-align: center;
+        padding-top: 5em;
+
+        .btn-form {
+            width: 80%;
+            margin: 1em 0;
+        }
+
+        .input-form {
+            width: 80%;
+            margin: 1em 0;
+        }
+     
+    }
+
+    footer {
+        position: initial;
+    }
+  
+    .sections {
+        &.large-section, &.small-section  {
+            &.site {   
+                margin-bottom: 0;
+
+                .section-add {
+        
+                    .label-form {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                    .input-form {
+                        width: 100%;
+                        margin: .7em 0;
+                    }
+                    .btn-form {
+                        width: 50%;
+                        margin: .7em 0;
+                    }
+                    
+                    
+                }
+            }  
+        }
+    }
+    .input-form {
+        &.inscription {
+            width: 40%;
+        }
+    }
+    .swiper-slide img {
+        width: 90%;
+      }
+}

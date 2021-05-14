@@ -1,0 +1,55 @@
+/* -----------------------------------------------------------------
+                SECTION LARGE
+ ----------------------------------------------------------------- */
+ .list-cards {
+    overflow-y: auto;
+    width: 100%; 
+}
+
+.todo-container {
+    overflow-y: auto;
+    max-height: 40vh;
+    margin-bottom: 1em;
+}
+
+.section-fields {
+    width: 100%;
+
+    &.responsive-tab {
+        display: none;
+    }
+    
+    .fields-form {
+        background: $color-white;
+        color: $color-contrast;
+        padding: 20px 30px;
+        border-radius: 10px;
+        border:solid 1px $color-white;
+        box-shadow: 1px 1px 20px $color-light;
+        width: 100%;
+        font-family: $font-primaire;   
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 18px;
+    
+        &::placeholder {
+            color: $color-dark;
+            letter-spacing: 4px;
+            font-size: 18px;
+        }
+        &:hover {
+            opacity: 70%;
+        }
+    }
+    #field-form-title {
+        margin-bottom: 1rem;
+    }
+    #field-form-text {
+        height: 70vh;
+    }
+}
+
+.options-add-form {
+    display: flex;
+    flex-wrap: wrap;
+}

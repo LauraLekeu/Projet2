@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/bootstrap-icons/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- MENU SIDEBAR --- start ------------------------------ -->
+    <div class="sidenav">
+
+        <div class="menu-burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+
+        <div id="logo">Logo du site</div>
+
+
+        <div class="content-menu">
+
+            <a class="lien-menu active" href="index.html">
+                <div class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="22" height="22"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                </div>
+                <div class="text-menu">Dashboard</div>
+            </a>
+
+            <a class="lien-menu" href="todo.html">
+                <div class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+
+                </div>
+                <div class="text-menu">Devoirs</div>
+            </a>
+
+            <a class="lien-menu" href="cours.html">
+                <div class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="22" height="22"
+                        class="bi bi-collection-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z" />
+                    </svg>
+                </div>
+                <div class="text-menu">Cours</div>
+            </a>
+
+            <a class="lien-menu" href="notes.html">
+                <div class="icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-text-fill" width="22"
+                        height="22" viewBox="0 0 16 16">
+                        <path
+                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z" />
+                    </svg>
+                </div>
+                <div class="text-menu">Notes</div>
+            </a>
+
+
+
+            <div class="content-logout">
+                <a class="lien-logout" href="#">
+                    <div class="icon-logout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                        </svg>
+                    </div>
+                    <div class="text-logout">Déconnexion</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- MENU SIDEBAR --- end ------------------------------ -->
+
+    <!-- Header --- start ------------------------------- -->
+    <div class="header">
+<div id="logo">Logo du site</div>
+        <div class="menu-burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+        <div class="title item-header"> <span class="name">Dashboard</span></div>
+
+        <div class="search item-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                class="bi bi-search icon-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            <form>
+                <input id="search-bar" type="text" name="search" placeholder="Rechercher">
+            </form>
+        </div>
+    </div>
+    <!-- Header --- end ----------------------------------- -->
+
+    <!-- MAIN --- start ------------------------------------- -->
+    <div class="main">
+
+        <div class="container dashboard">
+
+            <div class="sections small-section">
+
+                <div class="section-container">
+
+                    <a class="section-add" href="new-todo.html" >
+                        <div class="add-container">
+                            <div class="card-add">
+                                <div type="text" name="coursname" class="field-add"> Ajouter un devoir </div>
+                                <button class="icon-plus">
+                                    <svg fill="currentColor" width="30" height="30" viewBox="0 0 448 448"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="section-total">
+                        <div class="total-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-list-ul" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>
+                            <span> 3 </span>
+                        </div>
+                    </div>
+
+                    <div class="content-separation"></div>
+
+                    <!-- star card X3-->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="">
+                                <p class="card-titre" style="margin:0;"><span>28/05</span> | Nom du cou.. </p>
+                                <p class="card-soustitre" style="margin-bottom:0;">La tâche : Lorem , ... </p>
+                            </div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-app" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3-->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="">
+                                <p class="card-titre" style="margin:0;"><span>28/05</span> | Nom du cou.. </p>
+                                <p class="card-soustitre" style="margin-bottom:0;">La tâche : Lorem , ... </p>
+                            </div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-app" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3-->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="">
+                                <p class="card-titre" style="margin:0;"><span>28/05</span> | Nom du cou.. </p>
+                                <p class="card-soustitre" style="margin-bottom:0;">La tâche : Lorem , ... </p>
+                            </div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-app" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+
+            <div class="sections small-section">
+                <div class="section-container">
+
+                    <a href="new.html" class="section-add">
+                        <div class="add-container">
+                            <div class="card-add">
+                                <div type="text" name="coursname" class="field-add"> Créer une note</div>
+                                <button class="icon-plus">
+                                    <svg fill="currentColor" width="30" height="30" viewBox="0 0 448 448"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="section-total">
+                        <div class="total-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="currentColor"
+                                class="bi bi-file-text-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z" />
+                            </svg>
+                            <span> 27</span>
+                        </div>
+                    </div>
+
+                    <div class="content-separation"> </div>
+
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Titre de la note </div>
+                            </div>
+                            <div class="card-soustitre">Nom du cours</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Titre de la note </div>
+                            </div>
+                            <div class="card-soustitre">Nom du cours</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Titre de la note </div>
+                            </div>
+                            <div class="card-soustitre">Nom du cours</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end card -->
+               
+                </div>
+            </div>
+
+
+            <div class="sections small-section">
+                <div class="section-container">
+
+                    <div class="section-add">
+                        <div class="add-container">
+                            <form class="card-add">
+                                <input type="text" name="coursname" class="field-add" placeholder="Ajouter un cours">
+                                <button class="icon-plus">
+                                    <svg fill="currentColor" width="30" height="30" viewBox="0 0 448 448"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- MODIFIER COURS FORM
+                        <div class="add-container display-none"> 
+                            <form class="card-add edit-cours">
+    
+                                <input type="text" name="coursname"  class="field-add" value="Nom du cours à modifier">
+                                <button class="icon-plus">
+                               
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path
+                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div> -->
+                    </div>
+
+
+
+                    <div class="section-total">
+
+                        <div class="total-container">
+                            <svg width="22" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-collection-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z" />
+                            </svg>
+                            <span> 5 </span>
+                        </div>
+                    </div>
+
+                    <div class="content-separation"> </div>
+
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Nom du cours </div>
+                            </div>
+                            <div class="card-soustitre">Nombre de notes</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                    </svg>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Nom du cours </div>
+                            </div>
+                            <div class="card-soustitre">Nombre de notes</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                    </svg>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end card -->
+                    <!-- star card X3 -->
+                    <div class=" card-small cards-hover">
+                        <a href="detail.html" class="card-link">
+                            <div class="double-titre">
+                                <div class="card-titre">Nom du cours </div>
+                            </div>
+                            <div class="card-soustitre">Nombre de notes</div>
+                        </a>
+                        <div class="card-icons">
+                            <div class=" icons-container">
+                                <a href="" class="icon-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                    </svg>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end card -->
+                   
+
+                </div>
+            </div>
+
+            <div class="sections large-section" style="height: 0;"></div>
+
+            <br />
+        </div>
+
+        <br />
+
+    </div>
+    <!-- MAIN --- end ------------------------------------ -->
+
+</body>
+
+</html>

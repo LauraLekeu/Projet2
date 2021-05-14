@@ -1,0 +1,123 @@
+/* -----------------------------------------------------------------
+                MENU
+ ----------------------------------------------------------------- */
+.sidenav {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background: $color-contrast;
+    border-radius: 0 10px 10px 0;
+
+    .lien-menu {
+        padding: 1em 0 0 2em;
+        text-decoration: none;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        
+        .icon-menu {
+            margin-right: 10px;
+        }
+
+        .text-menu {
+            font-size: 16px;
+            font-weight: 400; 
+        }
+
+        &:hover {
+            color: $color-medium;
+        }
+        &:first-of-type {
+            margin-top: 30px;
+        }
+        &:last-of-type {
+            margin-bottom: 60px;
+        }
+        &.active {
+            color: $color-dark;
+        }
+    }
+
+    .content-logout {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+    
+        .lien-logout {
+            padding-bottom: 10px;
+            text-decoration: none;
+            font-weight: 300;
+            color: $color-medium;
+            display: flex;
+            align-items: center;
+
+            .icon-logout {
+                margin-left: 20px;
+            }
+
+            .text-logout {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                color: $color-dark;
+            }
+        }
+    } 
+}
+
+.menu-burger {
+    display: none;
+}
+
+#logo {
+    font-family: $font-secondaire;
+    font-size: 30px;
+    color: $color-white;
+    text-align: center;
+    padding-top: 2em;
+}
+
+
+ @media screen and (max-width: 700px) {
+
+    #logo {
+        font-size: 20px;
+        padding-top: 1em;
+    }
+
+    .sidenav {
+        display: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;  
+        border-radius: 0;
+        .lien-menu {
+            margin-left: 2em;
+            .text-menu {
+                margin: .5em;
+                font-size: 18px;
+                font-weight: 400; 
+            }
+        }   
+        .content-logout{
+            margin: 0 0 2em 2em;
+             .text-logout {
+                
+                font-size: 18px;
+                font-weight: 400; 
+            }
+        }     
+    }
+
+    .menu-burger {
+        display :block;
+        color: $color-white;
+        position: absolute;
+        right: 20px;
+        top: 1em;
+    }
+}

@@ -1,0 +1,239 @@
+
+/* -----------------------------------------------------------------
+                CARDS
+ ----------------------------------------------------------------- */
+.card-titre {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-contrast;
+    span {
+        font-weight: 800;
+        font-size: 16px;
+    }    
+}
+.card-soustitre {
+    color: $color-dark;
+    font-weight: 200;
+    margin-top: 10px; 
+}
+.text-separation {
+    color: $color-contrast;
+    font-size: 22px;
+    padding: 0 15px;
+}
+.card-date {
+    color: $color-dark;
+    font-weight: 100;
+    margin-top: 10px; 
+}
+.card-content {
+    color: $color-medium;
+    font-size: 12px;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin-top: 10px; 
+}
+.cards-hover {
+    &:hover {
+        opacity: 60%;
+    }
+} 
+
+.card-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-dark;
+
+    .icons-container {
+        margin-left: 1.5em; // Pour page cours
+
+        .icon-edit {
+            color: $color-dark;
+
+            &:hover {
+                color: $color-contrast;
+            }
+        }
+        .card-icons {
+            color: $color-light;
+
+            &.active {
+                color: $color-medium;
+
+                &:hover {
+                    color: $color-contrast;
+                }
+            }
+        }
+    }
+}
+
+.card-small {
+    padding: 20px 30px ;
+    margin-bottom: 1em;
+    background: $color-white;
+    box-shadow: 1px 1px 20px $color-light;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+    .boutons-card {
+        align-self: center;
+        justify-items: center;
+        width: auto;
+    }
+}
+
+.card-style-1 {
+    padding: 20px 30px ;
+    margin: 0 0 1em 0;
+    background: $color-white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px $color-shadow;
+
+    #edit-cours {
+        width: 100%;
+    }
+   
+    .card-link {
+        text-decoration: none;  
+
+        .double-titre {
+            display: flex;
+
+            &.home {
+                flex-wrap: wrap;
+                align-self: center;
+            }
+            .card-titre{
+                margin:0;
+                padding:0;
+            }
+            .card-date {
+                align-self: center;
+                margin:0;
+                padding:0;
+            }
+        }
+    }
+
+    #formulaire-edit-cours {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.card-style-2 {
+    margin: 0 0 1em 0;
+    background: #fff;  
+    box-shadow: 1px 1px 20px $color-light;
+    color: $color-dark;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    &.completed {
+        color: $color-medium;
+    }   
+    
+    .card-container {
+        display: flex;
+        align-items: center;
+
+        .texts-content {
+            margin-left: 20px;
+        }
+    }
+    .card-icons {
+        margin-top: 1em;
+        cursor: pointer;
+        color: $color-medium;
+        width: 24px;
+        height: 24px;
+
+        &:hover {
+            color: $color-dark;
+        }
+    }
+}
+
+.card-add { 
+    display: flex;
+    padding: 5px 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    &.edit-cours {
+        margin: 1em 0;
+        .field-add {
+            border:solid 1px $color-light;
+            background-color: $color-light;
+            color: $color-contrast;
+            font-family: $font-primaire;
+            font-size: 14px;
+        }
+        &:hover {
+            .field-add{
+                border:solid 1px $color-medium;
+                background-color: $color-medium;
+            }
+            svg {
+                color:$color-medium;
+            }
+        }
+    }
+    
+    &:hover {
+        .field-add {
+            border:solid 1px $color-dark;
+            background-color: $color-dark;
+        }
+        svg {
+            color:$color-dark;
+        }
+    }  
+
+
+    .icon-plus {
+        width: 20%;
+        cursor: pointer;
+        background: none; 
+        border: none;
+        text-decoration: none;
+        font-size: 16px;
+        color: $color-medium;
+
+        svg {
+        width: 30px;
+        }
+    }
+
+    .field-add {
+        width: 80%;
+        border-radius: 10px;
+        color: $color-white;
+        padding: 20px 30px;
+        border:solid 1px $color-contrast;
+        font-size: 16px;
+        letter-spacing: 1px ;
+        background-color: $color-contrast;
+        cursor: pointer;
+        
+        &.form-new {
+            width: 75%;
+        }
+
+        &::placeholder {
+            color: $color-white;
+            font-family: $font-primaire;
+            font-size: 16px;    
+        }
+    }
+}

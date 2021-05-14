@@ -1,0 +1,108 @@
+
+/* -----------------------------------------------------------------
+                TAGS
+ ----------------------------------------------------------------- */
+ #newtag, .field-new {
+    box-shadow: 1px 1px 20px $color-light;
+    border: 1px solid $color-white;
+    border-radius: 10px;
+    background:$color-white;
+    color: $color-contrast;
+    padding: 20px 30px;
+     width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px ;
+
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px ;
+        color: $color-contrast;
+    }
+
+    &:hover {
+        background:$color-medium;
+        border: 1px solid $color-medium;
+    }
+}
+
+#newtag {
+    margin-bottom: 1em;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    height: auto;
+
+    &.menu-tag {
+        z-index: 10000;
+        top: 8em;
+        height: auto;
+        background: $color-light;
+        width: 100%;
+    }
+
+    .tag-note {
+        display: flex;
+        background: $color-medium;
+        color: $color-contrast;
+        font-size: 14px; 
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 10px;        
+        margin-right: .5em;
+        margin-bottom:.5em;
+        height: auto;
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        // Hover => Notes, New
+        &.hover {
+            &:hover {
+                background: $color-contrast;
+                color: $color-light;
+                opacity: 50%;
+            }
+        }
+
+        // Active => Notes
+        &.active { 
+            background: $color-white;
+            color: $color-contrast;
+            padding-right: 10px;
+            svg {
+                display: none;
+            }
+        }  
+
+        // Delete => Notes
+        &.delete {
+            background: $color-light;
+            color: $color-dark;
+            margin-bottom: 1em;
+
+            div {
+                margin-right: 1em;
+            }
+            svg:hover  {
+                color: $color-contrast;
+            }
+        }
+
+        // Selected => New cours, New devoirs
+        &.selected {
+            background: $color-white;
+            color: $color-dark;
+            padding-right: 10px;
+             box-shadow: 1px 1px 20px $color-shadow;
+            svg {
+                display: none;
+            }
+        }
+    }
+}

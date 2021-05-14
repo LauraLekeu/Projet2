@@ -1,0 +1,90 @@
+/* -----------------------------------------------------------------
+                HEADER
+ ----------------------------------------------------------------- */
+.header {
+    position: fixed;
+    z-index: 300;
+    top: 0px;
+    left: 220px;
+    background: linear-gradient(to bottom, $color-light, $color-light, $color-light,$color-light, $color-light,rgb(244, 244, 245, 0));
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    #logo {
+        display: none;
+    }
+
+    .title {
+        align-self: center;
+        font-weight: 200;
+        font-size: 35px;
+        color: $color-contrast;
+        font-family: $font-primaire;
+        margin: 70px 0 30px 30px;
+        width: 100%;
+
+        .name {
+            font-weight: 500;
+        }
+    }
+
+    .search {
+        position: absolute;
+        right: 250px;
+        
+        form #search-bar {
+            width: 15em;
+            margin-top: 30px;
+            padding-left: 30px;
+            color: $color-contrast;
+            font-size: 16px;
+            height: 2em;
+            border:solid 1px $color-white;
+            border-radius: 20px;
+            background-color:#FFF;
+            box-shadow: 1px 1px 20px $color-shadow;
+
+            &::placeholder {
+                color: $color-medium;
+            }
+        }
+        .icon-search {
+            width: 25px;
+            position: absolute;
+            top: 35px;
+            right: 10px;
+            color: $color-medium;
+            z-index: 200;
+        }
+    }
+}
+
+
+
+@media screen and  (max-width: 700px){
+
+    .header {
+        background: $color-contrast;
+        display: block;
+        height: 8em;
+        text-align: start;
+        left: 0px;
+
+        #logo {
+            display: block;
+            padding-top: 1em;
+            font-size: 20px;
+        }
+        .title {
+            margin: 1em 0;
+            font-size: 25px;
+            text-align: center;
+            color: $color-white;
+        }
+        .search {
+            display: none;
+        }
+    }
+}

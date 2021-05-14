@@ -1,0 +1,120 @@
+/* -----------------------------------------------------------------
+                SECTION SMALL
+ ----------------------------------------------------------------- */
+ .section-total {
+    margin:  .2em ;
+
+    .total-container {
+        display: flex;
+        align-items:flex-end;
+
+        svg {
+            color: $color-medium;
+        }
+        span {
+            color: $color-dark;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+    }
+}
+
+.content-separation {  
+    text-align: center;
+    // margin-top: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 22px;
+    color: $color-dark;
+    padding-bottom: .5em;
+    border-bottom: 1px solid $color-light;
+    margin-bottom: 1em;
+}
+
+#menu-options, #date-todo, #text-todo {
+    width: 100%;
+    max-width: 100%;
+    font-family: $font-primaire;
+    font-size: 14px;
+    border:solid 1px $color-white;
+    color: $color-contrast; 
+}
+
+#menu-options, #date-todo {
+    font-weight: 600;
+    padding: 0 2em;
+    border-radius: 10px;
+    background-color:$color-contrast;
+    color: $color-white;
+    appearance: none;
+    position: relative;
+    height: 3em;
+    font-size: 15px;
+    width: 100%;
+
+    &::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+
+    &:hover {
+        background-color:$color-contrast;
+        opacity: 80%;
+    }
+}
+
+#fleche-menu-options {
+    position: relative;
+    left: 87%;
+    bottom: 1.8em;
+    color: $color-white;
+}
+
+#btn-todo {
+    padding: auto;
+    margin: 1em auto; 
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    width: 40%;
+    height: 2.5em;
+    border:solid 1px $color-light;
+    border-radius: 10px;
+    background-color:$color-light;
+    color: $color-medium;
+
+    &.active {
+        color: $color-white;
+        background-color:$color-contrast;
+        box-shadow: 1px 1px 20px $color-light;
+
+        &:hover {
+            color: $color-white;
+            background-color:$color-dark
+        }
+    }
+}
+
+.note-container {
+    white-space: pre-line;
+    background: $color-white;
+    color: $color-contrast;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border:solid 1px $color-white;
+    box-shadow: none; 
+    width: 100%;
+    font-family: $font-primaire;   
+    letter-spacing: 1px; 
+    cursor: pointer;
+    &::placeholder {
+        color: $color-medium;
+        letter-spacing: 4px;
+        font-size: 18px;
+    }
+
+    .titre {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
